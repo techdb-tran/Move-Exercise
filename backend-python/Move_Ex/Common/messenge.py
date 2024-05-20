@@ -1,0 +1,7 @@
+NOT_MATCH_PASSWORD = "Repeatpassword does not match password"
+WRONG_FORM = "Incorrect email form"
+INTERGRITY_EMAIL = "Email is registed"
+NOT_EXIST_EMAIL = "Email does not exist"
+TMP_BANED = "Your Account is temply baned"
+FOREVER_BANED = "Your Account is foreverly baned"
+IS_NOT_ACTIVED = "Your Account is not actived"

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Reset Email</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+
+
+    h3 {
+      margin: 0;
+      color: #13D0B4;
+      font-size: 24px;
+    }
+
+
+    .img {
+      background-image: url(https://res.cloudinary.com/dezcltf7s/image/upload/v1711725593/Screenshot_2024-03-29_221807_walvy6.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .container {
+        max-width: 90%;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="img"></div>
+
+    <p>Thank you for choosing Move Exercise! To complete the verification
+      process for your account, please enter the following OTP (One-Time
+      Password),</p>
+
+    <p>OTP Code:</p>
+
+    <h3>
+      <%= otp %>
+    </h3>
+
+    <p>Please use this OTP within the next 2 minutes to verify your account. If
+      you did not request this code, please ignore this message.</p>
+
+    <p>For security reasons, please do not share this OTP with anyone,
+      including Move Exercise staff.</p>
+
+    <div class="footer">
+      <p>Thank you,<br>Move Exercise Team</p>
+    </div>
+  </div>
+</body>
+
+</html>

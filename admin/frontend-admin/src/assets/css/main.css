@@ -1,0 +1,89 @@
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+:root {
+  --primary-color: #13d0b4;
+  --primary-color-hover: #3be0c8;
+  --primary-text-color: #666666;
+  --secondary-text-color: #999999;
+  --misc-blue-color: #0ab5e7;
+  --misc-orange-color: #ff647a;
+  --misc-pink-color: #ff7bb900;
+  --primary-white-color: #ffffff;
+  --primary-black-color: #000000;
+  --shadow-color: #999999;
+  --error-background-color: #FFEFF1;
+  --error-border-color: #FF8092;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: var(--primary-black-color);
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: var(--primary-black-color);
+}
+
+.paragraph {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--primary-text-color);
+}
+
+.secondaryText {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--secondary-text-color);
+}
+
+.p-tabview-ink-bar {
+  height: 4px;
+}
+
+.p-tabview-title {
+  font-weight: 400;
+}
+
+.container {
+  width: 962px;
+  margin: 56px auto 0;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #a6a6a6;
+  border-radius: 50px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #c0c0c0;
+}
+
+.p-dropdown-items-wrapper {
+  max-height: 250px !important;
+}
